@@ -46,4 +46,48 @@ Notice that the print statement is no longer in the function, but instead is cal
 
 This is very similar to the return statement in both JavaScript and Ruby and probably most other languages.
 
+##Functions in Functions so your function can function
+
+
 ## Scope
+
+Scope is a difficult and abstract concept for a lot of people to understand. Python has strict scoping  guidelines that can be broken into two different rules. When looking for a variable name, python essentially looks in two places.
+
+1. The local namespace, or scope.
+2. The global scope.
+
+The local scope is any variable that is declared within the given function. The global scope is any variable that is declared outside of any function or class.
+
+Lets do some examples
+
+``` python
+	n = 1
+	def add():
+		return n + 1
+	print add()
+```
+This code will not break the program. Python first checks for `n` in the local function, which it can't find, and then looks for it in the global scope, where it is declared.
+``` python
+	def add():
+		n = 1
+		return n + 1
+	print add()
+	print n
+```
+This code will break the program. The last line, `print(n)`, looks for n in the local scope, which is the global scope, and the global scope, which is the same as before, and cannot find the variable declaration. In short, any variable declared within a function or loop is immediately "destroyed" one the function or loop ends. 
+
+One more example that is important is that the local scope only specifies the current function's scope, and not any "outer" scopes that may be in play. Lets look at a slightly different example from above:
+``` python
+	def add():
+		n = 1
+		return addMore()
+	def addMore():
+		return n + 1
+	print add()
+```
+Intuitively, this program looks like it would work. Since the `addMore()` function is called in the `add()` function, you would think that `n` could be used. This is, in fact, false. The local scope only includes what is in the current function, and not in any function that it may be nested in.
+
+
+
+
+

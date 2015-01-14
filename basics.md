@@ -8,20 +8,20 @@
 ###
 ## Printing
 ### Python Indexes and Slice
-#### len(a) | 6
-#### a[0] | 0
-#### a[5] | 5
-#### a[-1] | 5
-#### a[-2] | 4
-#### a[1:] | [1,2,3,4,5]
-#### a[:5] | [0,1,2,3,4]
-#### a[:-2] | [0,1,2,3,]
-#### a[1:3] | [1,2]
-#### a[1:-1] | [1,2,3,4]
-#### b=a[:] | shallow copy of a
+##### len(a) | 6
+##### a[0] | 0
+##### a[5] | 5
+##### a[-1] | 5
+##### a[-2] | 4
+##### a[1:] | [1,2,3,4,5]
+##### a[:5] | [0,1,2,3,4]
+##### a[:-2] | [0,1,2,3,]
+##### a[1:3] | [1,2]
+##### a[1:-1] | [1,2,3,4]
+##### b=a[:] | shallow copy of a
 
 ## Commenting
-### To make comments enter '#' before the line of code.
-### To comment multiple lines of code highlight the lines hold CTRL then press the '/' code.
+#### To make comments enter '#' before the line of code.
+#### To comment multiple lines of code highlight the lines hold CTRL then press the '/' code.
 ## Booleans
 ###

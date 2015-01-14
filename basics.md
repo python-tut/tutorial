@@ -7,16 +7,29 @@ Python is completely object oriented. You do not need to declare variables befor
 
 This section will go over a few basic types of variables: Numbers &  Strings.
 
+###Math Operators
+Assume variable a holds 10 and variable b holds 20, then:
+
+|Operator |Description |Example |
+|:------------:|:--------------:|:--------------:|
+|+|	Addition - Adds values on either side of the operator	|a + b will give 30
+|-|	Subtraction - Subtracts right hand operand from left hand operand|	a - b will give -10
+|* |	Multiplication - Multiplies values on either side of the operator	|a * b will give 200
+|/|	Division - Divides left hand operand by right hand operand|	b / a will give 2
+|%|	Modulus - Divides left hand operand by right hand operand and returns remainder	|b % a will give 0
+|**|	Exponent - Performs exponential (power) calculation on operators|	a**b will give 10 to the power 20
+|//|	Floor Division - The division of operands where the result is the quotient in which the digits after the decimal point are removed.|	9//2 is equal to 4 and 9.0//2.0 is equal to 4.0
+
+
 ### Numbers
 To define an integer, use the following syntax:
 
 - myint = 7
 
-### Numbers
+### Strings
 Strings are defined either with a single quote or a double quotes. Example:
  - mystring = 'hello'
  - mystring = "bye"
-
 
 Here are a few examples:
   - pen = 10
@@ -29,6 +42,7 @@ Also an easier way to remember this is variables appear on the left of the equal
 
 ## Printing
 You'll use print() a whole lot in the future. All it does is output whatever is inside the parentheses.
+
 Print is a function that we will go into later, but just understand that it can take a value. On the first line, we provide a string value "My first Python code!", which is a string because of the quotes. So, you just told Python to output that string to the console. Python completes that task and moves onto the next line where it prints out a different string.
 
 Using the variables from the last section, you'll learn how to print strings:

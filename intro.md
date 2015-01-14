@@ -5,6 +5,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ###COMPANIES THAT USE PYTHON:
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" width=200>
+
 ![](http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png)
 
 ![](http://img4.wikia.nocookie.net/__cb20140626142342/marvelcinematicuniverse/images/c/c0/NASA.png)

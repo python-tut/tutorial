@@ -85,6 +85,8 @@ Bitwise operator works on bits and perform bit by bit operation. Assume if a = 6
 
 The **_if_** statement of Python is similar to that of other languages. The if statement contains a logical expression using which data is compared and a decision is made based on the result of the comparison.
 
+Some important pieces of all these statements is that colons and indention are key in Python. You must indent after the colon for it to read the statement. if you do not then it will not be included in the statement. It is as if you are starting a new line or expression.
+
 SYNTAX:
 ```python
 if expression:
@@ -113,19 +115,47 @@ Good bye!
 
 ##IF ELSE Statement
 
+An else statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a false value.
+
+The else statement is an optional statement and there could be at most only one else statement following if .
+
+
 SYNTAX:
 ```python
-
+if expression:
+   statement(s)
+else:
+   statement(s)
 ```
 
 EXAMPLE:
 ```python
+var1 = 100
+if var1:
+   print "1 - Got a true expression value"
+   print var1
+else:
+   print "1 - Got a false expression value"
+   print var1
 
+var2 = 0
+if var2:
+   print "2 - Got a true expression value"
+   print var2
+else:
+   print "2 - Got a false expression value"
+   print var2
+
+print "Good bye!"
 ```
 
 RESULT:
 ```
-
+1 - Got a true expression value
+100
+2 - Got a false expression value
+0
+Good bye!
 ```
 
 

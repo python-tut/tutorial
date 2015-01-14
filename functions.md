@@ -173,7 +173,7 @@ Ever wonder where all of the built-in functions are coming from? They're essenti
 
 This is very similar to Ruby's `require` keyword.
 
-## Putting is All Together 
+## Putting it All Together 
 
 1. Create a function that takes in a list and returns a random item from that list (hint: look up the random module)
 2. Create a function with a hard-coded list that calls the function above and returns a random item from the local hard-coded list.

@@ -76,7 +76,7 @@ Hello World!Hello World!
 Hello World!TEST
 ```
 Python Lists:
-Lists are the most versatile of Python’s compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.
+Lists are the most versatile of Python’s compound data types. A list contains items separated by commas and enclosed within square brackets ([]). Python doesn't have a native array data structure, but it has the list which is much more general and can be used as a multidimensional array quite easily.
 
 The values stored in a list can be accessed using the slice operator ( [ ] and [ : ] ) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus ( + ) sign is the list concatenation operator, and the asterisk ( * ) is the repetition operator. For example:
 
@@ -168,24 +168,9 @@ dict = {}
   Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type name as a function.
 
   There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.
+ a long integer. base specifies the base if x is a string.
 
-  Function Description
-  int(x [,base])
-
-  Converts x to an integer. base specifies the base if x is a string.
-
-  long(x [,base] )
-
-  Converts x to a long integer. base specifies the base if x is a string.
-
-  float(x)
-
-  Converts x to a floating-point number.
-
-  complex(real [,imag])
-
-  Creates a complex number.
-
+Data manipulation
   str(x)
 
   Converts object x to a string representation.
@@ -213,27 +198,3 @@ dict = {}
   dict(d)
 
   Creates a dictionary. d must be a sequence of (key,value) tuples.
-
-  frozenset(s)
-
-  Converts s to a frozen set.
-
-  chr(x)
-
-  Converts an integer to a character.
-
-  unichr(x)
-
-  Converts an integer to a Unicode character.
-
-  ord(x)
-
-  Converts a single character to its integer value.
-
-  hex(x)
-
-  Converts an integer to a hexadecimal string.
-
-  oct(x)
-
-  Converts an integer to an octal string.

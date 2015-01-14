@@ -3,9 +3,23 @@
 # Basic Syntax
  Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide the Javascript equivalent.
 ## Variable Declaration
+Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.
+
+This section will go over a few basic types of variables: Numbers &  Strings.
+
+### Numbers
+To define an integer, use the following syntax:
+
+- myint = 7
+
+### Numbers
+Strings are defined either with a single quote or a double quotes. Example:
+ - mystring = 'hello'
+ - mystring = "bye"
+
+
 In programming a variable is a name for value, similar to how "price" is a name for, "100"
 
-## Printing
 
 
 Here are a few examples:
@@ -14,6 +28,10 @@ Here are a few examples:
   - students = 5
 
 You get the point. Also, variables can not be numbers.
+
+## Printing
+Using the variables from the last section, you'll learn how to print strings:
+
 
 ## Math
  Before we begin i'll start by nameing them so you know what they are and they're uses:

@@ -171,9 +171,9 @@ Ever wonder where all of the built-in functions are coming from? They're essenti
 ```
 `math` is the name the module that you are importing, or the name of the file that you want to use methods from. When using one of these methods, you then have to write `module.function()` in order to use them. Math has a variety of very useful functions that you will undoubtedly need if you keep working with python.
 
+This is very similar to Ruby's `require` keyword.
+
 ## Putting is All Together 
 
-
-
-
-
+1. Create a function that takes in a list and returns a random item from that list (hint: look up the random module)
+2. Create a function with a hard-coded list that calls the function above and returns a random item from the local hard-coded list.

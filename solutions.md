@@ -31,3 +31,27 @@ Which should output:
 18 equals 2 * 9
 19 is a prime number
 ```
+
+##Functions Assessment Solution:
+1.
+``` python
+	import random
+
+	def sample(list):
+		return list[random.randrange(0,len(list))]
+
+	print sample([1,2,3,4,5])
+```
+2.
+```python
+	import random
+
+	def sample(list):
+		return list[random.randrange(0,len(list))]
+
+	def sampleList():
+		list = [1,2,3,4,5]
+		return sample(list)
+
+	print sampleList()
+```

@@ -48,6 +48,16 @@ This is very similar to the return statement in both JavaScript and Ruby and pro
 
 ##Functions in Functions so your function can function
 
+One thing to note about Python is that is allows you to call functions within functions. 
+
+``` python
+	def add():
+		return addMore()
+	def addMore():
+		return 1
+	print add()
+```
+`addMore()`is called within the other function `add()`. If you come from JS or Ruby, this is very familiar. 
 
 ## Scope
 
@@ -86,6 +96,13 @@ One more example that is important is that the local scope only specifies the cu
 	print add()
 ```
 Intuitively, this program looks like it would work. Since the `addMore()` function is called in the `add()` function, you would think that `n` could be used. This is, in fact, false. The local scope only includes what is in the current function, and not in any function that it may be nested in.
+
+#Built-in Functions
+Python has a plethora of built-in functions that it allows you to use. To use them, its as simple as calling a function that you made yourself. Here is an example:
+``` python
+
+```
+
 
 
 

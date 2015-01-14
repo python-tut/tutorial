@@ -100,9 +100,30 @@ Intuitively, this program looks like it would work. Since the `addMore()` functi
 #Built-in Functions
 Python has a plethora of built-in functions that it allows you to use. To use them, its as simple as calling a function that you made yourself. Here is an example:
 ``` python
-
+	print abs(-42)
 ```
+`abs()` is a built-in python function that returns the absolute value of the given number. As expected, this program would print `42`. 
 
+Here is just a few of the many Python built-in functions
+* `abs()`
+* `min()`
+* `max()`
+* `any()`
+* `filter()`
+* `map()`
+
+#Importing Functions
+
+Ever wonder where all of the built-in functions are coming from? They're essentially coming from files that declare python functions the same way we did above. You can actually make your own functions and import them into other documents to use functions you write. This is how libraries are created and used. For example, Python has a math module (or library) that we can use. We need to, however, import it first.
+
+``` python
+	import math 
+	
+	print math.sqrt(16)
+```
+`math` is the name the module that you are importing, or the name of the file that you want to use methods from. When using one of these methods, you then have to write `module.function()` in order to use them. Math has a variety of very useful functions that you will undoubtedly need if you keep working with python.
+
+# Putting is All Together 
 
 
 

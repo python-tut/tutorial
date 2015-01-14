@@ -2,11 +2,16 @@
 
 
 
-##conditional Operators
+##Conditional Operators
 
 ###What is an Operator?
 
+Simple answer can be given using expression 4 + 5 is equal to 9. Here, 4 and 5 are called operands and + is called operator. Python language supports the following types of operators.
+
 ###Math Operators
+
+Assume variable a holds 10 and variable b holds 20, then:
+
 |Operator |Description |Example |
 |:------------:|:--------------:|:--------------:|
 |+|	Addition - Adds values on either side of the operator	|a + b will give 30
@@ -18,6 +23,9 @@
 |//|	Floor Division - The division of operands where the result is the quotient in which the digits after the decimal point are removed.|	9//2 is equal to 4 and 9.0//2.0 is equal to 4.0
 
 ###Comparison Operators
+
+Assume variable a holds 10 and variable b holds 20, then:
+
 |Operator |Description |Example |
 |:------------:|:--------------:|:--------------:|
 |==	|Checks if the value of two operands are equal or not, if yes then condition becomes true.|	(a == b) is not true.
@@ -29,6 +37,9 @@
 |<=|	Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.|	(a <= b) is true.
 
 ###Assignment Operators
+
+Assume variable a holds 10 and variable b holds 20, then:
+
 |Operator |Description |Example |
 |:------------:|:--------------:|:--------------:|
 |=|	Simple assignment operator, Assigns values from right side operands to left side operand|	c = a + b will assigne value of a + b into c
@@ -41,6 +52,8 @@
 |//=|	Floor Dividion and assigns a value, Performs floor division on operators and assign value to the left operand	|c //= a is equivalent to c = c // a
 
 ###Bitwise Operators
+
+Bitwise operator works on bits and perform bit by bit operation. Assume if a = 60; and b = 13; Now in binary format they will be as follows:
 
 |Operator |Description |Example |
 |:------------:|:--------------:|:--------------:|
@@ -68,25 +81,90 @@
 |in not in|	Membership operators
 |not or and|	Logical operators
 
-##IF ELSE
+##IF Statement
+
+The **_if_** statement of Python is similar to that of other languages. The if statement contains a logical expression using which data is compared and a decision is made based on the result of the comparison.
+
+SYNTAX:
 ```python
-if x
+if expression:
+  statement(s)
+```
+
+EXAMPLE:
+```python
+var1 = 100
+if var1:
+   print "1 - Got a true expression value"
+   print var1
+
+var2 = 0
+if var2:
+   print "2 - Got a true expression value"
+   print var2
+print "Good bye!"
+```
+RESULT:
+```
+1 - Got a true expression value
+100
+Good bye!
+```
+
+##IF ELSE Statement
+
+SYNTAX:
+```python
+
+```
+
+EXAMPLE:
+```python
+
+```
+
+RESULT:
+```
+
+```
+
+
+##While Statement
+
+SYNTAX:
+```python
+
+```
+
+EXAMPLE:
+```python
+
+```
+
+RESULT:
+```
+
 ```
 
 
 
 
+##FOR Statement
 
-##While
+SYNTAX:
+```python
 
+```
 
+EXAMPLE:
+```python
 
+```
 
+RESULT:
+```
 
-
-##FOR
-
-
+```
 
 
 

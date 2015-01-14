@@ -1,4 +1,4 @@
-#Control Flow Tutorial
+#Control Flow
 
 
 
@@ -117,7 +117,7 @@ Good bye!
 
 An **_else_** statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a false value.
 
-The else statement is an optional statement and there could be at most only one else statement following if .
+The else statement is an optional statement and there could be at most only one else statement following if.
 
 
 SYNTAX:
@@ -163,6 +163,12 @@ Good bye!
 The **_elif_** statement allows you to check multiple expressions for truth value and execute a block of code as soon as one of the conditions evaluates to true.
 
 Like the else, the elif statement is optional. However, unlike else, for which there can be at most one statement, there can be an arbitrary number of elif statements following an if.
+
+Key Javascript and Ruby differences:
+
+- notice the difference in how the else if syntax is different from both ruby and javascript.
+
+- there is also the need for the colon at the end of each expression and indention of the statement.
 
 SYNTAX:
 ```python

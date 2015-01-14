@@ -1,7 +1,7 @@
 # Introduction
 ###
 # Basic Syntax
- Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide the Javascript equivalent.
+Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide the Javascript equivalent.
 ## Variable Declaration
 Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.
 
@@ -30,33 +30,16 @@ Here are a few examples:
 You get the point. Also, variables can not be numbers.
 
 ## Printing
+You'll use print() a whole lot in the future. Basically, all it does is output whatever is inside the parentheses.
+Print is a function that we will go into later, but just understand that it can take a value. On the first line, we provide a string value "My first Python code!", which is a string because of the quotes. So, you just told Python to output that string to the console. Python completes that task and moves onto the next line where it prints out a different string.
+
 Using the variables from the last section, you'll learn how to print strings:
 
+- print(pen)
+- print(pen_in_a_desk)
+- print(students)
 
-## Math
- Before we begin i'll start by nameing them so you know what they are and they're uses:
- + plus | adds
- - minus | subtracts
- / slash | divides
- * asterisk | multiplies
- % percent | divides and returns the remainder
- < less than | comparater
- > greater than
- <= less than equal
- >= greater than equal
-
-
-
-
-
-## Commenting
+## Comments
 
 To make a multiline comment type " ''' ".  
 If you're using a text editor, make comments by entering '#' before the line of code. To comment multiple lines of code highlight the lines hold CTRL then press the '/' code.
-
-
-## Booleans
-
-### Truth Terms
-
-and,or, not, !=(not),==(equal), >=(greater than equal), <=(less than equal), True  False

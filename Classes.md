@@ -2,6 +2,9 @@
 
 Classes are an important part of python, it allows us to create objects and manipulate them through methods to reach our goals.
 
+
+----------
+
 ##Creating a class
 
 Creating a class is simple, all it requires is one line of code.
@@ -10,7 +13,11 @@ class Example(object):
 ```
 With our class created it we can begin to input an object.
 
+----------
+
+
 ##Initialize your object
+
 
 One initialize command will allow you to create you objects.
 ``` python
@@ -22,6 +29,22 @@ def __init__(self, param1, param2, param3):
 Here `param` is equivalent to any parameters that you wish to add. 
 
 This is how we initialize an object to be manipulated by further methods.
+
+----------
+
+##Creating your object
+
+Now that we can initialize the object its time to make one. To start we give it a variable.
+``` python
+class Example(object):
+	def __init__(path, params):
+		pass
+var = Example(params)
+```
+It is important to note that your variable name will become the `path` so any parameters are entered afterwards.
+
+----------
+
 
 ##Scope
 
@@ -44,6 +67,10 @@ In this scenario, the variable `xkcd` is outside of the class. It is a global va
 
 Understanding scope is extremely important and can stop many problems that arise due to improperly called variables.
 
+
+----------
+
+
 ##Methods
 
 Methods are what makes classes useful. They are the means of manipulating the data we have stored in our class. As seen above methods are similar to functions just called upon our classes. They are limited to only the classes that they reside in so unlike other methods such as `.len()` and `.str()` they will not work on anything that isn't the class they correspond to.
@@ -60,6 +87,10 @@ randomname.method(param)
 ```
 
 Methods can be treated the same way as functions as they perform a very similar function the only main difference being the restrictions on the usage of methods and the way they are implemented. It is important to note that functions can be used on objects, however functions are often less relied on due to their inability to access information locally to the object.
+
+
+----------
+
 
 ##Inheritance
 
@@ -92,3 +123,28 @@ class NextExample(Example):
 		print "OVERRIDE!"
 ```
 Doing so will override the object in the `NextExample` class without affecting objects in the `Example` class. This is useful in ensuring a common method can create different results depending on circumstance.
+
+
+----------
+
+##Assessment
+
+Create a class and a inherited class and have them print out a different statement for the same method for two different objects.
+
+``` python
+class Example(object):
+	def __init__(path, name):
+		path.name = path
+	def method(path):
+		print "Answer 1"
+
+class BetterExample(Example):
+	def method(path):
+		print "Answer 2"
+	
+obj1 = Example("Object 1")
+obj2 = BetterExample("Object 2")
+
+obj1.method()
+obj2.method()
+```

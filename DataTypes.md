@@ -3,51 +3,49 @@ Standard Data Types:
 The data stored in memory can be of many types. For example, a person’s age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard types that are used to define the operations possible on them and the storage method for each of them.
 Python has five standard data types:
 
-Numbers
-
-String
-
-List
-
-Tuple
-
-Dictionary
+1. Numbers
+2. String
+3. List
+4. Tuple
+5. Dictionary
 
 Python Numbers: 
 Number data types store numeric values. They are immutable data types which means that changing the value of a number data type results in a newly allocated object.
 
 Number objects are created when you assign a value to them. For example:
 
-var1 = 1 
-var2 = 10 
+`var1 = 1` 
+`var2 = 10`
 You can also delete the reference to a number object by using the del statement. The syntax of the del statement is:
 
-del var1[,var2[,var3[….,varN]]]] 
+`del var1[,var2[,var3[….,varN]]]]`
 You can delete a single object or multiple objects by using the del statement. For example:
 
-del var 
-del var_a, var_b 
+`del var 
+del var_a, var_b` 
 Python supports four different numerical types:
 
-int (signed integers)
+1. int (signed integers)
 
-long (long integers [can also be represented in octal and hexadecimal])
+2. long (long integers [can also be represented in octal and       hexadecimal])
 
-float (floating point real values)
+3. float (floating point real values)
 
-complex (complex numbers)
+4. complex (complex numbers)
 
 Examples: 
 Here are some examples of numbers:
 
-int long float complex 
-10 51924361L 0.0 3.14j 
-100 -0x19323L 15.20 45.j 
--786 0122L -21.9 9.322e-36j 
-080 0xDEFABCECBDAECBFBAEl 32.3+e18 .876j 
--0490 535633629843L -90. -.6545+0J 
--0x260 -052318172735L -32.54e100 3e+26J 
-0x69 -4721885298529L 70.2-E12 4.53e-7j 
+|int   | long           | float     | complex|
+|-----:|---------------:|----------:|--------:|
+|10    |51924361L       | 0.0       | 3.14j   |
+|100   |-0x19323L       |15.20      |45.j     |
+|-786  | 0122L          | -21.9     |9.322e-36j| 
+|080   |0xDEFABCECBDAECB|32.3+e18   | .876j   |
+|-0490 |535633629843L   | -90.      |-.6545+0J|
+|-0x260 | -052318172735L| -32.54e100| 3e+26J  | 
+|0x69   |-4721885298529L|70.2-E12   |4.53e-7j 
+
 Python allows you to use a lowercase L with long, but it is recommended that you use only an uppercase L to avoid confusion with the number 1. Python displays long integers with an uppercase L.
 
 A complex number consists of an ordered pair of real floating-point numbers denoted by a + bj, where a is the real part and b is the imaginary part of the complex number.
@@ -139,95 +137,96 @@ Dictionaries are enclosed by curly braces ( { } ) and values can be assigned and
 !/usr/bin/python
 
 dict = {} 
-dict[‘one’] = “This is one” 
-dict[2] = “This is two”
-
-tinydict = {‘name’: ‘john’,’code’:6734, ‘dept’: ‘sales’}
-
-print dict[‘one’] # Prints value for ‘one’ key 
-print dict[2] # Prints value for 2 key 
-print tinydict # Prints complete dictionary 
-print tinydict.keys() # Prints all the keys 
-print tinydict.values() # Prints all the values 
-This will produce the following result:
-
-This is one 
-This is two 
-{‘dept’: ‘sales’, ‘code’: 6734, ‘name’: ‘john’} 
-[‘dept’, ‘code’, ‘name’] 
-[‘sales’, 6734, ‘john’] 
-Dictionaries have no concept of order among elements. It is incorrect to say that the elements are “out of order”; they are simply unordered.
-
-Data Type Conversion: 
-Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type name as a function.
-
-There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.
-
-Function Description 
-int(x [,base])
-
-Converts x to an integer. base specifies the base if x is a string.
-
-long(x [,base] )
-
-Converts x to a long integer. base specifies the base if x is a string.
-
-float(x)
-
-Converts x to a floating-point number.
-
-complex(real [,imag])
-
-Creates a complex number.
-
-str(x)
-
-Converts object x to a string representation.
-
-repr(x)
-
-Converts object x to an expression string.
-
-eval(str)
-
-Evaluates a string and returns an object.
-
-tuple(s)
-
-Converts s to a tuple.
-
-list(s)
-
-Converts s to a list.
-
-set(s)
-
-Converts s to a set.
-
-dict(d)
-
-Creates a dictionary. d must be a sequence of (key,value) tuples.
-
-frozenset(s)
-
-Converts s to a frozen set.
-
-chr(x)
-
-Converts an integer to a character.
-
-unichr(x)
-
-Converts an integer to a Unicode character.
-
-ord(x)
-
-Converts a single character to its integer value.
-
-hex(x)
-
-Converts an integer to a hexadecimal string.
-
-oct(x)
-
-Converts an integer to an octal string.
+  dict[‘one’] = “This is one” 
+  dict[2] = “This is two”
+  
+  tinydict = {‘name’: ‘john’,’code’:6734, ‘dept’: ‘sales’}
+  
+  print dict[‘one’] # Prints value for ‘one’ key 
+  print dict[2] # Prints value for 2 key 
+  print tinydict # Prints complete dictionary 
+  print tinydict.keys() # Prints all the keys 
+  print tinydict.values() # Prints all the values 
+  This will produce the following result:
+  
+  This is one 
+  This is two 
+  {‘dept’: ‘sales’, ‘code’: 6734, ‘name’: ‘john’} 
+  [‘dept’, ‘code’, ‘name’] 
+  [‘sales’, 6734, ‘john’] 
+  Dictionaries have no concept of order among elements. It is incorrect to say that the elements are “out of order”; they are simply unordered.
+  
+  Data Type Conversion: 
+  Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type name as a function.
+  
+  There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.
+  
+  Function Description 
+  int(x [,base])
+  
+  Converts x to an integer. base specifies the base if x is a string.
+  
+  long(x [,base] )
+  
+  Converts x to a long integer. base specifies the base if x is a string.
+  
+  float(x)
+  
+  Converts x to a floating-point number.
+  
+  complex(real [,imag])
+  
+  Creates a complex number.
+  
+  str(x)
+  
+  Converts object x to a string representation.
+  
+  repr(x)
+  
+  Converts object x to an expression string.
+  
+  eval(str)
+  
+  Evaluates a string and returns an object.
+  
+  tuple(s)
+  
+  Converts s to a tuple.
+  
+  list(s)
+  
+  Converts s to a list.
+  
+  set(s)
+  
+  Converts s to a set.
+  
+  dict(d)
+  
+  Creates a dictionary. d must be a sequence of (key,value) tuples.
+  
+  frozenset(s)
+  
+  Converts s to a frozen set.
+  
+  chr(x)
+  
+  Converts an integer to a character.
+  
+  unichr(x)
+  
+  Converts an integer to a Unicode character.
+  
+  ord(x)
+  
+  Converts a single character to its integer value.
+  
+  hex(x)
+  
+  Converts an integer to a hexadecimal string.
+  
+  oct(x)
+  
+  Converts an integer to an octal string.
+  

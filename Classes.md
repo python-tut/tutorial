@@ -123,3 +123,10 @@ class NextExample(Example):
 		print "OVERRIDE!"
 ```
 Doing so will override the object in the `NextExample` class without affecting objects in the `Example` class. This is useful in ensuring a common method can create different results depending on circumstance.
+
+
+----------
+
+##Assessment
+
+Create a class and a inherited class and have them print out a different statement for the same method for two different objects.

@@ -58,3 +58,37 @@ The method is called by using:
 randomname.method(param)
 #param if you have one set otherwise it can be left empty.
 ```
+
+Methods can be treated the same way as functions as they perform a very similar function the only main difference being the restrictions on the usage of methods and the way they are implemented. It is important to note that functions can be used on objects, however functions are often less relied on due to their inability to access information locally to the object.
+
+##Inheritance
+
+Classes can be called in the creating of another class to inherit that classes properties, 
+
+``` python
+class Example(object):
+	def __init___(self):
+		# blah blah blah coding blah
+	def method(self):
+		print "stuff"
+
+class NextExample(Example):
+	def post_history(self):
+		print "Other Stuff"
+```
+By calling the previous class in the new class, the new class inherits the objects of the previous class and can thus act on them in a independent environment that will no longer affect other objects in the previous class.
+
+Additionally, a inherited class can override the previous class by naming the method the same as before.
+
+``` python
+class Example(object):
+	def __init___(self):
+		# blah blah blah coding blah
+	def method(self):
+		print "stuff"
+
+class NextExample(Example):
+	def method(self):
+		print "OVERRIDE!"
+```
+Doing so will override the object in the `NextExample` class without affecting objects in the `Example` class. This is useful in ensuring a common method can create different results depending on circumstance.

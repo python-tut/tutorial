@@ -12,6 +12,7 @@ Here are a few examples:
   - pen = 10
   - pen_in_a_desk = 3
   - students = 5
+
 You get the point. Also, variables can not be numbers.
 
 ## Math

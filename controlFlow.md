@@ -115,7 +115,7 @@ Good bye!
 
 ##IF ELSE Statement
 
-An else statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a false value.
+An **_else_** statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a false value.
 
 The else statement is an optional statement and there could be at most only one else statement following if .
 
@@ -158,46 +158,183 @@ RESULT:
 Good bye!
 ```
 
+##ELIF
+
+The **_elif_** statement allows you to check multiple expressions for truth value and execute a block of code as soon as one of the conditions evaluates to true.
+
+Like the else, the elif statement is optional. However, unlike else, for which there can be at most one statement, there can be an arbitrary number of elif statements following an if.
+
+SYNTAX:
+```python
+if expression1:
+   statement(s)
+elif expression2:
+   statement(s)
+elif expression3:
+   statement(s)
+else:
+   statement(s)
+```
+
+EXAMPLE:
+```python
+var = 100
+if var == 200:
+   print "1 - Got a true expression value"
+   print var
+elif var == 150:
+   print "2 - Got a true expression value"
+   print var
+elif var == 100:
+   print "3 - Got a true expression value"
+   print var
+else:
+   print "4 - Got a false expression value"
+   print var
+
+print "Good bye!"
+```
+
+RESULT:
+```
+3 - Got a true expression value
+100
+Good bye!
+
+```
+
+
 
 ##While Statement
 
+A **_while_** loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.
+
 SYNTAX:
 ```python
-
+while expression:
+   statement(s)
 ```
 
 EXAMPLE:
 ```python
+count = 0
+while (count < 9):
+   print 'The count is:', count
+   count = count + 1
 
+print "Good bye!"
 ```
 
 RESULT:
 ```
-
+The count is: 0
+The count is: 1
+The count is: 2
+The count is: 3
+The count is: 4
+The count is: 5
+The count is: 6
+The count is: 7
+The count is: 8
+Good bye!
 ```
 
+##ELSE Statement with WHILE Statement
 
+Python supports to have an else statement associated with a loop statement.
 
+1. If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.
+
+2. If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+
+SYNTAX:
+```python
+while expression:
+  statement(s)
+else expression:
+  statement(s)
+```
+
+EXAMPLE:
+```python
+count = 0
+while count < 5:
+   print count, " is  less than 5"
+   count = count + 1
+else:
+   print count, " is not less than 5"
+```
+
+RESULT:
+```
+0 is less than 5
+1 is less than 5
+2 is less than 5
+3 is less than 5
+4 is less than 5
+5 is not less than 5
+```
 
 ##FOR Statement
 
+The **_for_** loop in Python has the ability to iterate over the items of any sequence, such as a list or a string.
+
 SYNTAX:
 ```python
-
+for iterating_var in sequence:
+   statements(s)
 ```
 
 EXAMPLE:
 ```python
+for letter in 'Python':     # First Example
+   print 'Current Letter :', letter
 
+fruits = ['banana', 'apple',  'mango']
+for fruit in fruits:        # Second Example
+   print 'Current fruit :', fruit
+
+print "Good bye!"
 ```
 
 RESULT:
 ```
-
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : h
+Current Letter : o
+Current Letter : n
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!
 ```
 
+You can also iterate through an array. len() is a built in function that is finding the length of the array and the range() is giving the expression a number range to iterate through.
+
+EXAMPLE:
+```python
+fruits = ['banana', 'apple',  'mango']
+for index in range(len(fruits)):
+   print 'Current fruit :', fruits[index]
+
+print "Good bye!"
+```
+
+RESULT:
+```
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!
+```
 
 
 
 
 ##Assessment
+
+``Create an example that illustrates the combination of``
+``an else statement with a for statement that searches``
+``for prime numbers from 10 through 20.``

@@ -1,6 +1,6 @@
 # Basic Syntax
 # Basic Syntax
-### Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide the Javascript equivalent.
+### Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide Javascript equivalents in our code.
 ## Variable Declaration
 ####
 ### argv[command line args]

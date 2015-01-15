@@ -129,21 +129,3 @@ Doing so will override the object in the `NextExample` class without affecting o
 ##Assessment
 
 Create a class and a inherited class and have them print out a different statement for the same method for two different objects.
-
-``` python
-class Example(object):
-	def __init__(path, name):
-		path.name = path
-	def method(path):
-		print "Answer 1"
-
-class BetterExample(Example):
-	def method(path):
-		print "Answer 2"
-
-obj1 = Example("Object 1")
-obj2 = BetterExample("Object 2")
-
-obj1.method()
-obj2.method()
-```

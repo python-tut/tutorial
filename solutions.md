@@ -4,8 +4,7 @@
 
 
 
-
-Control Flow Assessment Solution:
+##Control Flow Assessment Solution:
 
 ```python
 for num in range(10,20):  #to iterate between 10 to 20
@@ -54,4 +53,23 @@ Which should output:
 		return sample(list)
 
 	print sampleList()
+```
+
+##Classes assignment:
+``` python
+class Example(object):
+	def __init__(path, name):
+		path.name = path
+	def method(path):
+		print "Answer 1"
+
+class BetterExample(Example):
+	def method(path):
+		print "Answer 2"
+
+obj1 = Example("Object 1")
+obj2 = BetterExample("Object 2")
+
+obj1.method()
+obj2.method()
 ```

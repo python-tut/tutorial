@@ -49,6 +49,7 @@ If a language named after a comedy troupe isn't reason enough, heres a few more.
 2. Easability: Most of python is written in plain english. It's easy to understand and pick up. 
 3. Flexibility: Python was never built to solve a specific problem, and so can be used efficiently for many different applications.
 4. Robustness: Python is powerful. Just take a look below.
+
 <img src="http://www.sixfeetup.com/blog/Udemy_PythonSpeed.png" width=400>
 
 

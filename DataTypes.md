@@ -171,30 +171,49 @@ dict = {}
  a long integer. base specifies the base if x is a string.
 
 Data manipulation
+  string methods
+  len()
+  lower()
+  upper()
+  str()
   str(x)
+  List Method
+  list
+  list.append(x)
+  Add an item to the end of the list; equivalent to    a[len(a):] = [x].
+  list.extend(L)
+  list.insert(i, x)
+  list.remove(x)
+  list.pop([i])
+  list.index(x)
+  list.count(x)
+  list.sort(cmp=None, key=None, reverse=False)
+ list.reverse()
 
-  Converts object x to a string representation.
 
-  repr(x)
-
-  Converts object x to an expression string.
-
-  eval(str)
-
-  Evaluates a string and returns an object.
-
-  tuple(s)
-
-  Converts s to a tuple.
-
-  list(s)
-
-  Converts s to a list.
-
-  set(s)
-
-  Converts s to a set.
-
-  dict(d)
-
-  Creates a dictionary. d must be a sequence of (key,value) tuples.
+  An example that uses most of the list methods:
+  ```python
+  >>>
+  >>> a = [66.25, 333, 333, 1, 1234.5]
+  >>> print a.count(333), a.count(66.25), a.count('x')
+  2 1 0
+  >>> a.insert(2, -1)
+  >>> a.append(333)
+  >>> a
+  [66.25, 333, -1, 333, 1, 1234.5, 333]
+  >>> a.index(333)
+  1
+  >>> a.remove(333)
+  >>> a
+  [66.25, -1, 333, 1, 1234.5, 333]
+  >>> a.reverse()
+  >>> a
+  [333, 1234.5, 1, 333, -1, 66.25]
+  >>> a.sort()
+  >>> a
+  [-1, 1, 66.25, 333, 333, 1234.5]
+  >>> a.pop()
+  1234.5
+  >>> a
+  [-1, 1, 66.25, 333, 333]
+  ```python

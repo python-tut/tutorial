@@ -1,7 +1,6 @@
-# Introduction
-
 # Basic Syntax
 Hey! Now we'll be going over the basic syntax you'll need to use Python. To make this a bit easier, we'll provide the Javascript equivalent as well.
+
 ## Variable Declaration
 Python is completely object oriented. You do not need to declare variables before using them, or to declare their type. Every variable in Python is an object, thankfully. Also python interprets and declares variable for you when you set them equal to a value.
 

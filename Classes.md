@@ -11,22 +11,21 @@ Creating a class is simple, all it requires is one line of code.
 ``` python
 class Example(object):
 ```
-With our class created it we can begin to input an object.
+With our class we created, we can begin to input an object.
 
 ----------
 
 
 ##Initialize your object
 
-
-One initialize command will allow you to create you objects.
+One initialize command will allow you to create new objects.
 ``` python
 def __init__(self, param1, param2, param3):
 	self.param1 = param1
 	self.param2 = param2
 	self.param3 = param3
 ```
-Here `param` is equivalent to any parameters that you wish to add. 
+Here `param` is equivalent to any parameters that you wish to add.
 
 This is how we initialize an object to be manipulated by further methods.
 
@@ -34,7 +33,7 @@ This is how we initialize an object to be manipulated by further methods.
 
 ##Creating your object
 
-Now that we can initialize the object its time to make one. To start we give it a variable.
+Now that we can initialize the object, it's time to make one. Let's give it a variable.
 ``` python
 class Example(object):
 	def __init__(path, params):
@@ -60,8 +59,8 @@ class Example(object):
 		print marbles
 		print self.param1
 
-test = Example("text!")	
-test.method()	
+test = Example("text!")
+test.method()
 ```
 In this scenario, the variable `xkcd` is outside of the class. It is a global variable and can be used anywhere in the code. On the other hand, the variable `marbles` is declared inside the class. It is a member variable and can only be called inside the class itself. Finally we have `self.param1` which is an instance variable. We can only call it inside of the method because we called `self` as a parameter.
 
@@ -94,7 +93,7 @@ Methods can be treated the same way as functions as they perform a very similar 
 
 ##Inheritance
 
-Classes can be called in the creating of another class to inherit that classes properties, 
+Classes can be called in the creating of another class to inherit that classes properties,
 
 ``` python
 class Example(object):
@@ -141,7 +140,7 @@ class Example(object):
 class BetterExample(Example):
 	def method(path):
 		print "Answer 2"
-	
+
 obj1 = Example("Object 1")
 obj2 = BetterExample("Object 2")
 
